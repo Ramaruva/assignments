@@ -5,6 +5,13 @@
  */
 
 function sleep(milliseconds) {
+    const sleepprom = new Promise((resolve,reject)=>{
+         for(let i=0;i<milliseconds*1000000000;i++){
+             
+         }
+         resolve();
+    })
+    return sleepprom;
 }
 
 module.exports = sleep;
